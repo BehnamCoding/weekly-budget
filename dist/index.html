@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Book</title>
+<link href="./assets/css/355.css" rel="stylesheet"><link href="./assets/css/files.css" rel="stylesheet"></head>
+
+<body dir="rtl">
+
+  <!-- EMAIL PANEL -->
+  <div class="container">
+    <h1 class="text-center font-weight-bold text-white title">برنامه بودجه بندی هفتگی</h1>
+    <br>
+    <hr class="bg-white"><br>
+
+    <div class="row justify-content-around">
+      <div class="col-md-5">
+        <div class="box">
+          <div class="title text-center">
+            <h4 class="font-weight-bold">اضافه کردن هزینه ها</h4>
+          </div>
+          <div id="right-panel" class="main-right mt-5">
+            <div class="form-group">
+              <label>اسم:</label>
+              <input type="text" id="name" class="form-control" placeholder="مثلا: تاکسی یا رستوران" autocomplete="off">
+            </div>
+            <div class="form-group my-4">
+              <label>قیمت (به تومان):</label>
+              <input type="text" id="price" class="form-control" placeholder="20000" autocomplete="off">
+            </div>
+            <button id="add-button" class="btn btn-primary rounded">اضافه کردن</button>
+            <div id="message"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="cost-list">
+            <div class="title">
+              <h5 class="text-center font-weight-bold">لیست هزینه ها</h5>
+            </div>
+            <ul id="middle-panel" class="list-group mx-auto">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box mt-3">
+          <div id="left-panel" class="budget">
+            <div class="title">
+              <h5 class="text-center font-weight-bold">بودجه</h5>
+            </div>
+            <div class="items">
+              <div class="alert alert-primary">بودجه هفته: <span id="total-budget"></span> تومان</div>
+              <div class="alert alert-success left-alert">باقی مانده: <span id="left-budget"></span> تومان</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="./assets/js/bundle.js"></script><script src="./assets/js/355.js"></script><script src="./assets/js/files.js"></script></body>
+
+</html>
