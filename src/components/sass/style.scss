@@ -1,0 +1,89 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './fonts';
+
+* {
+    font-family: iranyekanregRegular;
+}
+
+body {
+    background: linear-gradient(to left, #0000ff, #020272);
+}
+
+.container {
+    margin-top: 30px;
+    hr {
+        padding: 1px 0;
+    }
+    .row {
+        .box {
+            margin-top: 0 !important;
+            box-shadow: 3px 3px 9px #0303038e;
+            background-color: #fff;
+            border-radius: 7px;
+            padding: 22px 15px 25px 15px;
+            .title {
+                color: #040499;
+            }
+            .main-right {
+                .form-group {
+                    width: 95%;
+                    margin: auto;
+                    label {
+                        font-size: 15px;
+                    }
+                    input {
+                        margin-top: 7px;
+                        height: 45px;
+                        font-size: 15px;
+                        &::placeholder {
+                            color: #0000007a;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .alert {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+            }
+            .list-group {
+                margin-top: 35px;
+                padding-right: 0;
+                width: 98%;
+                .list-group-item {
+                    padding: 16px 15px;
+                    .text {
+                        font-size: 15.5px;
+                        font-family: iranyekanBold;
+                    }
+                    .badge {
+                        float: left;
+                        .price {
+                            padding-right: 3px;
+                        }
+                    }
+                }
+            }
+            .budget {
+                .items {
+                    margin-top: 35px;
+                    .alert {
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        &:nth-of-type(2) {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        #left-panel {
+            .items {
+                .alert {
+                    font-size: 14.5px;
+                }
+            }
+        }
+    }
+}
